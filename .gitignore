@@ -3,13 +3,42 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
 
 # Virtual environment
 venv/
+.venv/
+env/
 .env
+.env.*
+!.env.example
 
 # VS Code
 .vscode/
 
 # Mac
 .DS_Store
+
+# Node / React
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+build/
+dist/
+coverage/
+
+# Databases and local runtime files
+*.db
+*.sqlite
+*.sqlite3
+uploads/
+tmp/
+temp/
+
+# Generated documents and caches
+__pycache__/
+*.log
