@@ -3,7 +3,7 @@
 [![CodeQL](https://github.com/oketade/Implementing-IoT/actions/workflows/codeql.yml/badge.svg)](https://github.com/oketade/Implementing-IoT/actions/workflows/codeql.yml)
 [![CI](https://github.com/oketade/Implementing-IoT/actions/workflows/ci.yml/badge.svg)](https://github.com/oketade/Implementing-IoT/actions/workflows/ci.yml)
 [![Coverage](https://img.shields.io/badge/coverage-not%20configured-lightgrey.svg)](#testing)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](project/school_RDI_Platform/frontend/package.json)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](project/RDI_SMART_CV_Platform/frontend/package.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Issues](https://img.shields.io/github/issues/oketade/Implementing-IoT)](https://github.com/oketade/Implementing-IoT/issues)
 
@@ -54,7 +54,7 @@ cd Implementing-IoT
 Install backend dependencies:
 
 ```bash
-cd project/school_RDI_Platform/backend
+cd project/RDI_SMART_CV_Platform/backend
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
@@ -69,7 +69,7 @@ npm install
 
 ### Configuration
 
-Create a backend `.env` file in `project/school_RDI_Platform/backend` if your local setup needs API keys or database settings:
+Create a backend `.env` file in `project/RDI_SMART_CV_Platform/backend` if your local setup needs API keys or database settings:
 
 ```env
 FRONTEND_URL=http://localhost:3000
@@ -85,14 +85,14 @@ Do not commit `.env` files or real API keys.
 Start the backend:
 
 ```bash
-cd project/school_RDI_Platform/backend
+cd project/RDI_SMART_CV_Platform/backend
 uvicorn main:app --reload
 ```
 
 Start the frontend in a second terminal:
 
 ```bash
-cd project/school_RDI_Platform/frontend
+cd project/RDI_SMART_CV_Platform/frontend
 npm start
 ```
 
@@ -123,7 +123,7 @@ Common workflow:
 │       └── codeql.yml
 ├── Machine learning/
 └── project/
-    └── school_RDI_Platform/
+    └── RDI_SMART_CV_Platform/
         ├── backend/
         │   ├── main.py
         │   ├── database.py
@@ -161,7 +161,7 @@ The React app provides the user interface for uploading CVs, editing profile dat
 Frontend tests can be run with:
 
 ```bash
-cd project/school_RDI_Platform/frontend
+cd project/RDI_SMART_CV_Platform/frontend
 npm test
 ```
 

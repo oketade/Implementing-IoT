@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: project/school_RDI_Platform/frontend
+        working-directory: project/RDI_SMART_CV_Platform/frontend
 
     steps:
       - name: Checkout repository
@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: "20"
           cache: "npm"
-          cache-dependency-path: project/school_RDI_Platform/frontend/package-lock.json
+          cache-dependency-path: project/RDI_SMART_CV_Platform/frontend/package-lock.json
 
       - name: Install dependencies
         run: npm ci
@@ -41,7 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: project/school_RDI_Platform/backend
+        working-directory: project/RDI_SMART_CV_Platform/backend
 
     steps:
       - name: Checkout repository
@@ -52,7 +52,7 @@ jobs:
         with:
           python-version: "3.10"
           cache: "pip"
-          cache-dependency-path: project/school_RDI_Platform/backend/requirements.txt
+          cache-dependency-path: project/RDI_SMART_CV_Platform/backend/requirements.txt
 
       - name: Install dependencies
         run: pip install -r requirements.txt

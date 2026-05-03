@@ -18,6 +18,7 @@ env/
 
 # VS Code
 .vscode/
+.claude/
 
 # Mac
 .DS_Store
