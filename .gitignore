@@ -23,6 +23,9 @@ env/
 # Mac
 .DS_Store
 
+# Windows
+desktop.ini
+
 # Node / React
 node_modules/
 npm-debug.log*
